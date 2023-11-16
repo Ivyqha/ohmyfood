@@ -179,3 +179,38 @@
     font-weight: 300;
     font-size: 18px; 
 }
+
+/******* footer *********/
+.footer { 
+    background-color: #353535;
+    padding: 25px; 
+}
+
+.footer img { 
+    width: 120px; 
+    margin-bottom: 20px; 
+    color: white; 
+    filter:invert(100%)
+} 
+
+.footer-text { 
+    display: flex;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.footer-link  {
+    margin-bottom: 10px; 
+    font-size: 18px; 
+}
+
+.footer-text .fa-solid { 
+    color: white;
+    padding-right: 8px; 
+}
+.footer a  {
+    color: white; 
+    text-decoration: none;
+    font-weight: 500; 
+
+}
