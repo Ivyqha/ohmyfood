@@ -1,0 +1,119 @@
+@import "../_variables.scss"; 
+@import "../_footer.scss"; 
+
+* { 
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    padding:0 ; 
+    
+}
+
+/******* header *********/
+.header { 
+    @include header(); 
+    display: flex;
+    
+    .fa-arrow-left { 
+        display: flex;
+        position: absolute; 
+        left: 0;
+        margin-left: 20px;  
+        font-size: 20px;
+    }
+}
+
+.heroimage { 
+    width:100%; 
+    z-index: 1; 
+    position: relative;
+}
+
+/******* menu *********/
+
+.menu { 
+    background-color: #f6f6f6;
+    z-index: 2; 
+    border-radius: 40px 40px 0 0 ; 
+    position: relative;
+    height: 100%; 
+    margin-top: -70px; 
+
+
+    .restaurant-name { 
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 20px 20px 20px;
+        align-items: center;
+    }
+
+    .title { 
+        font-family: 'Shrikhand', serif; 
+        font-size: 28px; 
+    }
+
+    .fa-heart { 
+        @include heart(); 
+    }
+}
+
+
+/******* menu selection *********/
+.course { 
+    padding: 0 20px 40px 20px; 
+
+    .course-title { 
+        font-weight: 300;
+        border-bottom: 3px solid #99E2D0;  
+        padding-bottom: 5px; 
+        width: 40px; 
+        font-size: 16px; 
+    }
+
+    .menu-card { 
+        margin-top: 10px; 
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        box-shadow: 0 5px 10px rgb(219, 219, 219); 
+        padding: 15px; 
+
+        .food-title {
+            font-weight: 500; 
+            font-size: 18px; 
+        }
+        
+        .subtitle { 
+            display: flex;
+            align-items: center;  
+            padding-top: 5px;
+            justify-content: space-between;
+    
+            .food-subtitle { 
+                font-weight: 300;
+                font-size: 15px; 
+            }
+            
+            .price { 
+                font-weight: 700;
+                font-size: 15px;
+                color: #353535; 
+                margin-left: 20px; 
+            }
+        }
+    } 
+}
+
+
+/******* button *********/
+.order-btn{ 
+   @include flexCenter(); 
+    
+
+   .button { 
+        @include gradientBtn(); 
+        margin-bottom: 50px; 
+    }
+}
+
+.footer { 
+    top: -100px; 
+}

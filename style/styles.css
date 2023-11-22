@@ -1,0 +1,252 @@
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer img {
+  width: 120px;
+  margin-bottom: 20px;
+  color: white;
+  filter: invert(100%);
+}
+.footer .footer-text {
+  display: flex;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer .footer-text .fa-solid {
+  color: white;
+  padding-right: 8px;
+}
+.footer .footer-link {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/******* header *********/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  height: 75px;
+  box-shadow: 0 4px 4px rgb(219, 219, 219);
+  z-index: 2;
+}
+.header .logo {
+  height: 35%;
+}
+
+/******* searchbar *********/
+.searchbar {
+  background-color: #EAEAEA;
+  height: 60px;
+  justify-content: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar input {
+  background-color: #EAEAEA;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  max-width: 200px;
+  height: 40%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #353535;
+  padding-left: 20px;
+}
+.searchbar ::placeholder {
+  color: #b4b4b4;
+}
+.searchbar .fa-location-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+/******* Book the meal you want *********/
+.bookmeal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 65px 20px;
+  background: #F6F6F6;
+}
+.bookmeal .subtitle {
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.bookmeal button {
+  width: 280px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  color: #FFFFFF;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0 5px 10px rgb(161, 161, 161);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.bookmeal button:hover {
+  opacity: 80%;
+  box-shadow: 0 5px 10px rgb(99, 99, 99);
+}
+.bookmeal .title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: black;
+}
+
+/******* Book the meal you want *********/
+.how-it-works {
+  padding: 60px 40px;
+  background-color: white;
+}
+.how-it-works .title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: black;
+}
+.how-it-works .instruction-box-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.how-it-works .instruction {
+  background: #F6F6F6;
+  display: flex;
+  margin: auto;
+  height: 90px;
+  width: 500px;
+  align-items: center;
+  border-radius: 25px;
+  padding-left: 50px;
+  box-shadow: 0 5px 10px rgb(219, 219, 219);
+}
+.how-it-works .instruction .fa-solid {
+  font-size: 25px;
+  color: #7E7E7E;
+}
+.how-it-works .instruction .text {
+  padding-left: 30px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+.how-it-works .instruction-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.how-it-works .instruction-box .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+/******* Restaurants *********/
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 60px 40px;
+}
+.restaurants .title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: black;
+}
+.restaurants .restaurant-card {
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgb(219, 219, 219);
+  transition-property: transform;
+  transition-duration: 400ms;
+  position: relative;
+}
+.restaurants .restaurant-card:active {
+  transform: scale(1.1);
+}
+.restaurants .restaurant-card .title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.restaurants .restaurant-card img {
+  max-width: 100%;
+  height: auto;
+}
+.restaurants .restaurant-card .img-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.restaurants .restaurant-card .restaurant-text {
+  padding: 20px 15px;
+}
+.restaurants .restaurant-card .restaurant-text .subtitle {
+  font-weight: 300;
+  font-size: 18px;
+}
+.restaurants .restaurant-card .new-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #008766;
+  font-weight: 550;
+  box-shadow: 0 1px 4px rgb(68, 68, 68);
+  font-size: 20px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  margin: 10px 10px;
+  padding: 10px;
+  width: 80px;
+}
+.restaurants .restaurant-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants .restaurant-text-container .fa-heart {
+  padding-right: 50px;
+  font-size: 25px;
+}
+.restaurants .restaurant-text-container .fa-heart:active {
+  color: red;
+}/*# sourceMappingURL=styles.css.map */

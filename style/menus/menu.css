@@ -1,0 +1,154 @@
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer img {
+  width: 120px;
+  margin-bottom: 20px;
+  color: white;
+  filter: invert(100%);
+}
+.footer .footer-text {
+  display: flex;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer .footer-text .fa-solid {
+  color: white;
+  padding-right: 8px;
+}
+.footer .footer-link {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/******* header *********/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  height: 75px;
+  display: flex;
+}
+.header .logo {
+  height: 35%;
+}
+.header .fa-arrow-left {
+  display: flex;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.heroimage {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+/******* menu *********/
+.menu {
+  background-color: #f6f6f6;
+  z-index: 2;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  height: 100%;
+  margin-top: -70px;
+}
+.menu .restaurant-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 20px 20px 20px;
+  align-items: center;
+}
+.menu .title {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+}
+.menu .fa-heart {
+  font-size: 25px;
+}
+.menu .fa-heart:active {
+  color: red;
+}
+
+/******* menu selection *********/
+.course {
+  padding: 0 20px 40px 20px;
+}
+.course .course-title {
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 40px;
+  font-size: 16px;
+}
+.course .menu-card {
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgb(219, 219, 219);
+  padding: 15px;
+}
+.course .menu-card .food-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.course .menu-card .subtitle {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  justify-content: space-between;
+}
+.course .menu-card .subtitle .food-subtitle {
+  font-weight: 300;
+  font-size: 15px;
+}
+.course .menu-card .subtitle .price {
+  font-weight: 700;
+  font-size: 15px;
+  color: #353535;
+  margin-left: 20px;
+}
+
+/******* button *********/
+.order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-btn .button {
+  width: 280px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  color: #FFFFFF;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0 5px 10px rgb(161, 161, 161);
+  transition-property: transform;
+  transition-duration: 400ms;
+  margin-bottom: 50px;
+}
+.order-btn .button:hover {
+  opacity: 80%;
+  box-shadow: 0 5px 10px rgb(99, 99, 99);
+}
+
+.footer {
+  top: -100px;
+}/*# sourceMappingURL=menu.css.map */

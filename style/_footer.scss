@@ -1,0 +1,35 @@
+.footer { 
+    background-color: #353535;
+    padding: 25px; 
+
+    img { 
+        width: 120px; 
+        margin-bottom: 20px; 
+        color: white; 
+        filter:invert(100%)
+    } 
+
+    .footer-text { 
+        display: flex;
+        margin-bottom: 10px; 
+        text-align: center;
+
+        .fa-solid { 
+            color: white;
+            padding-right: 8px; 
+        }
+    }
+
+    .footer-link  {
+        margin-bottom: 10px; 
+        font-size: 18px; 
+    }
+
+    a  {
+        color: white; 
+        text-decoration: none;
+        font-weight: 500; 
+    
+    }
+
+}
