@@ -1,6 +1,6 @@
-@import "./_variables.scss"; 
-@import "./_footer.scss"; 
-@import "./breakpoints.scss";
+@import "../_variables.scss"; 
+@import "../_footer.scss"; 
+@import "../breakpoints.scss";
 
 
 *{
@@ -11,6 +11,7 @@
 
 body { 
     min-width: 420px; 
+   
 }
 
 
@@ -82,15 +83,11 @@ body {
 .how-it-works { 
     padding: 60px 40px; 
     background-color: white;
+    
 
     .title { 
         @include homePageTitle(); 
     }
-
-    // .instruction-box-container { 
-    //     flex-wrap: wrap;
-    //     justify-content: center
-    // }
     
     .instruction { 
         @include instructionBox();
@@ -122,6 +119,7 @@ body {
     .restaurant-card { 
        @include restaurantCard(); 
        position: relative;
+      
     
        .new-label { 
             @include flexCenter(); 

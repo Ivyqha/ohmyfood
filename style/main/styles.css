@@ -27,6 +27,37 @@
   font-weight: 500;
 }
 
+@media (min-width: 1200px) {
+  /******* Home page *********/
+  .how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-it-works .instruction-box-container {
+    display: flex;
+  }
+  .how-it-works .instruction-box-container .instruction-box {
+    width: 350px;
+    padding-right: 30px;
+  }
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .restaurants .restaurants-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1140px;
+    gap: 20px;
+  }
+  .restaurants .restaurant-card {
+    width: 48%;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -107,7 +138,7 @@ body {
   border: none;
   color: #FFFFFF;
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  box-shadow: 0 5px 10px rgb(161, 161, 161);
+  box-shadow: 0 5px 10px rgb(219, 219, 219);
   transition-property: transform;
   transition-duration: 400ms;
 }
@@ -123,7 +154,7 @@ body {
   text-align: center;
 }
 
-/******* Book the meal you want *********/
+/******* How it works *********/
 .how-it-works {
   padding: 60px 40px;
   background-color: white;
@@ -133,10 +164,6 @@ body {
   font-weight: 700;
   margin-bottom: 45px;
   color: black;
-}
-.how-it-works .instruction-box-container {
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .how-it-works .instruction {
   background: #F6F6F6;
@@ -233,7 +260,7 @@ body {
   align-items: center;
   color: #008766;
   font-weight: 550;
-  box-shadow: 0 1px 4px rgb(68, 68, 68);
+  box-shadow: 0 5px 10px rgb(219, 219, 219);
   font-size: 20px;
   border-radius: 2px;
   background-color: #99E2D0;
