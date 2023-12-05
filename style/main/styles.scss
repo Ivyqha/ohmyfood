@@ -1,11 +1,16 @@
 @import "./_variables.scss"; 
 @import "./_footer.scss"; 
+@import "./breakpoints.scss";
 
 
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0; 
     padding: 0; 
+}
+
+body { 
+    min-width: 420px; 
 }
 
 
@@ -69,10 +74,11 @@
 
     .title { 
         @include homePageTitle(); 
+        text-align: center;
     }
 }
 
-/******* Book the meal you want *********/
+/******* How it works *********/
 .how-it-works { 
     padding: 60px 40px; 
     background-color: white;
@@ -81,10 +87,10 @@
         @include homePageTitle(); 
     }
 
-    .instruction-box-container { 
-        flex-wrap: wrap;
-        justify-content: center
-    }
+    // .instruction-box-container { 
+    //     flex-wrap: wrap;
+    //     justify-content: center
+    // }
     
     .instruction { 
         @include instructionBox();
@@ -121,6 +127,10 @@
             @include flexCenter(); 
             @include newRestaurantLabel(); 
         }
+
+        a { 
+            text-decoration: none;
+        }
     }
     .restaurant-text-container { 
         display: flex;
@@ -129,6 +139,7 @@
 
         .fa-heart { 
             padding-right: 50px; 
+            color: black; 
             @include heart() 
         }
     }

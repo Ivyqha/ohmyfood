@@ -33,6 +33,10 @@
   padding: 0;
 }
 
+body {
+  min-width: 420px;
+}
+
 /******* header *********/
 .header {
   display: flex;
@@ -116,6 +120,7 @@
   font-weight: 700;
   margin-bottom: 45px;
   color: black;
+  text-align: center;
 }
 
 /******* Book the meal you want *********/
@@ -220,6 +225,7 @@
 .restaurants .restaurant-card .restaurant-text .subtitle {
   font-weight: 300;
   font-size: 18px;
+  color: black;
 }
 .restaurants .restaurant-card .new-label {
   display: flex;
@@ -238,6 +244,9 @@
   padding: 10px;
   width: 80px;
 }
+.restaurants .restaurant-card a {
+  text-decoration: none;
+}
 .restaurants .restaurant-text-container {
   display: flex;
   align-items: center;
@@ -245,6 +254,7 @@
 }
 .restaurants .restaurant-text-container .fa-heart {
   padding-right: 50px;
+  color: black;
   font-size: 25px;
 }
 .restaurants .restaurant-text-container .fa-heart:active {

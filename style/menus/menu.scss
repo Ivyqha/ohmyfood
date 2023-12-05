@@ -73,7 +73,7 @@
         margin-top: 10px; 
         background-color: #FFFFFF;
         border-radius: 15px;
-        box-shadow: 0 5px 10px rgb(219, 219, 219); 
+        box-shadow: $boxShadow; 
         padding: 15px; 
 
         .food-title {
