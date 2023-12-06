@@ -92,17 +92,22 @@ body {
     .instruction { 
         @include instructionBox();
     }
-    
+
     .instruction-box { 
         @include flexCenter(); 
         margin-bottom: 25px; 
+        position: relative;
+        right: 10px; 
+        
     
         .number { 
-            @include flexCenter(); 
             @include instructionNumber(); 
+            position: relative;
+            left: 15px; 
         }
     }
-    
+
+   
 
 }
 

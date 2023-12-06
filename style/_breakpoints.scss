@@ -8,15 +8,16 @@
         
         .instruction-box-container {
             display: flex; 
+            align-items: center;
 
             .instruction-box { 
-                width: 350px;  
+                width: 400px;  
                 padding-right: 30px ; 
             }
 
         }
     }
-    
+
     .restaurants { 
         display: flex;
         flex-direction: column;
@@ -27,7 +28,7 @@
             flex-wrap: wrap; 
             justify-content: space-between; 
             margin: 0 auto;
-            max-width: 1140px; 
+            max-width: 1290px; 
             gap:20px; 
         }
 
@@ -36,6 +37,27 @@
         }
 
     }
+
+     /******* footer*********/
+
+     .footer { 
+        display: flex; 
+        padding: 80px 80px 20px; 
+        flex-direction: row-reverse;
+
+        .footer-text-container { 
+            display: flex;
+            margin-right: 60px; 
+        }
+
+        .footer-text { 
+            margin-right: 50px; 
+        }
+
+        .footer-link { 
+            font-size: 15px;
+        }
+     }
 
     
 }
