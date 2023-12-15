@@ -19,6 +19,42 @@ $boxShadow: 0 5px 10px rgb(219, 219, 219);
     }
 }
 
+@mixin footer { 
+        background-color: #353535;
+        padding: 25px; 
+    
+        img { 
+            width: 120px; 
+            margin-bottom: 20px; 
+            color: white; 
+            filter:invert(100%)
+        } 
+    
+        .footer-text { 
+            display: flex;
+            margin-bottom: 10px; 
+            text-align: center;
+    
+            .fa-solid { 
+                color: white;
+                padding-right: 8px; 
+            }
+        }
+    
+        .footer-link  {
+            margin-bottom: 10px; 
+            font-size: 18px; 
+        }
+    
+        a  {
+            color: white; 
+            text-decoration: none;
+            font-weight: 500; 
+        
+        }
+  
+}
+
 @mixin gradientBtn { 
         width: 280px; 
         height: 60px; 
@@ -31,8 +67,10 @@ $boxShadow: 0 5px 10px rgb(219, 219, 219);
         transition-property: transform;
         transition-duration: 400ms;
         &:hover {
-            opacity: 80%;
-            box-shadow: 0 5px 10px rgb(99, 99, 99); 
+            transition: all 500ms;
+            box-shadow: 0 5px 10px rgb(99, 99, 99);  
+            opacity: 80%; 
+            
         }
 }
 

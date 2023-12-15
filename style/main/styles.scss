@@ -1,5 +1,4 @@
 @import "../_variables.scss"; 
-@import "../_footer.scss"; 
 @import "../breakpoints.scss";
 
 
@@ -148,3 +147,7 @@ body {
     }
 }
 
+/******* Footer *********/
+footer {
+    @include footer() 
+}
