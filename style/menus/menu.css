@@ -133,12 +133,6 @@ body {
   font-family: "Shrikhand", serif;
   font-size: 28px;
 }
-.menu .fa-heart {
-  font-size: 25px;
-}
-.menu .fa-heart:active {
-  color: red;
-}
 
 /******* menu selection *********/
 .course {
@@ -199,7 +193,8 @@ body {
   margin-right: -10%;
   transition: 200ms ease-in;
 }
-.course .menu-card:hover > .tick-container {
+.course .menu-card:hover > .tick-container,
+.course .menu-card:active > .tick-container {
   display: flex;
   margin-right: 0;
 }
@@ -218,7 +213,7 @@ body {
   border: none;
   color: #FFFFFF;
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  box-shadow: 0 5px 10px rgb(219, 219, 219);
+  box-shadow: 0 5px 10px rgb(151, 151, 151);
   transition-property: transform;
   transition-duration: 400ms;
   margin-bottom: 50px;
@@ -257,4 +252,7 @@ footer a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+}
+footer a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=menu.css.map */

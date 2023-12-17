@@ -64,9 +64,6 @@ body {
         font-size: 28px; 
     }
 
-    .fa-heart { 
-        @include heart(); 
-    }
 }
 
 /******* menu selection *********/
@@ -84,7 +81,7 @@ body {
         margin-top: 10px; 
         background-color: #FFFFFF;
         border-radius: 15px;
-        box-shadow: $boxShadow; 
+        box-shadow:  0 5px 10px rgb(219, 219, 219);  
         display: flex;
         justify-content: space-between;
         position: relative; 
@@ -134,60 +131,14 @@ body {
 
     }
 
-    .menu-card:hover > .tick-container { 
+    .menu-card:hover > .tick-container,
+    .menu-card:active > .tick-container { 
         display: flex; 
         margin-right: 0; 
     }
-    //animation menu slide 
-    // .menu-card::before{ 
-    //     content: ''; 
-    //     position: absolute;
-    //     left:1; 
-    //     right: 0; 
-    //     top: 0; 
-    //     bottom:0;
-    //     height: 100%; 
-    //     width: 10%;
-    //     background-color:#99E2D0; 
-    //     z-index:1;  
-    //     transform: scaleX(0); 
-    //     transform-origin: right;
-    //     transition: transform 300ms ease-in-out; 
-    // }
-    // .menu-card:hover::before, 
-    // .menu-card:focus::before,
-    // .tick-container:hover::before,
-    // .tick-container:focus::before { 
-    //     transform:scaleX(1); 
-    // }
 
-    
-        // .tick-container { 
-        //     z-index: 2;  
-        //     display: flex;  
-        //     align-items: center;
-        //     justify-content: center;
-        //     color: white; 
-        //     background-color: #99E2D0; 
-        //     height: 77px;
-        //     width: 15%; 
-        //     position: absolute;
-        //     right:0;
-        //     top:0; 
-        //     bottom:0; 
-        //     overflow: hidden; 
-        //     transform: translateX(100%) ;
-        //     transition: transform 300ms ease-in;
-           
-        // }
 
-        // .menu-card:hover .tick-container{ 
-        //     transform: translateX(0) ;
-        
-        // }
 }
-
-
 
 
 /******* button *********/

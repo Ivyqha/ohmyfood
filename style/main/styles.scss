@@ -20,7 +20,6 @@ body {
     @include header(); 
     box-shadow: 0 4px 4px rgb(219, 219, 219); 
     z-index: 2; 
-
 }
 
 /******* searchbar *********/
@@ -82,7 +81,6 @@ body {
 .how-it-works { 
     padding: 60px 40px; 
     background-color: white;
-    
 
     .title { 
         @include homePageTitle(); 
@@ -105,9 +103,6 @@ body {
             left: 15px; 
         }
     }
-
-   
-
 }
 
 
@@ -115,35 +110,79 @@ body {
 .restaurants { 
     background-color: #F6F6F6;
     padding: 60px 40px; 
-
     .title { 
         @include homePageTitle(); 
     }
     
     .restaurant-card { 
-       @include restaurantCard(); 
-       position: relative;
-      
-    
+        border-radius: 15px; 
+        background-color:white; 
+        margin-bottom: 20px;
+        box-shadow:  0 5px 10px rgb(219, 219, 219);
+        position: relative;
+       &:hover{ 
+            box-shadow: 0 5px 10px rgb(99, 99, 99);
+            transform: scale(1.05);
+            transition-property: transform;
+            transition-duration: 400ms;
+       }
        .new-label { 
             @include flexCenter(); 
             @include newRestaurantLabel(); 
         }
-
         a { 
             text-decoration: none;
-        }
-    }
-    .restaurant-text-container { 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .fa-heart { 
-            padding-right: 50px; 
             color: black; 
-            @include heart() 
         }
+
+        img { 
+            width: 100%; 
+        }
+
+        .img-container { 
+            width:100%; 
+            height: 200px; 
+            object-fit: cover;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            border-top-right-radius:15px; 
+            border-top-left-radius:15px; 
+        }
+
+        .restaurant-text-container { 
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 15px; 
+    
+            .restaurant-text {
+                .subtitle { 
+                    font-weight: 300;
+                    font-size: 18px; 
+                    color: black; 
+                }
+            }
+
+            .heart-stack { 
+                font-size: 25px;
+                width: 35px;
+
+                .full-heart { 
+                    color: transparent; 
+                    background: linear-gradient(to top, #9356DC,#FF79DA); 
+                    opacity: 0;
+                    background-clip: text; 
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: 0.15s;
+                    &:hover { 
+                        opacity: 100%; 
+                    }
+                }
+            }
+        }
+
     }
 }
 
