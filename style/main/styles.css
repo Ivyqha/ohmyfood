@@ -9,12 +9,32 @@
 }
 @keyframes loading-fade {
   from {
-    opacity: 100%;
+    opacity: 1;
     visibility: visible;
   }
   to {
     opacity: 0%;
     visibility: hidden;
+  }
+}
+@keyframes header-slide-down {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes menu-slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 .loader {
@@ -27,7 +47,7 @@
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   z-index: 3;
-  animation: loading-fade 1s ease 1.5s forwards;
+  animation: loading-fade 1s ease 1s forwards;
 }
 
 .loader::after {
@@ -37,7 +57,17 @@
   border: 15px solid #FF79DA;
   border-top-color: #9356DC;
   border-radius: 50%;
-  animation: loading 0.75s ease infinite;
+  animation: loading 1s ease infinite;
+}
+
+.header-slide-down {
+  animation: header-slide-down 1s ease-in;
+  z-index: 1;
+}
+
+.menu-slide-up {
+  animation: menu-slide-up 1s ease-in;
+  z-index: 3;
 }
 
 /******* Features and Elements *********/
@@ -361,6 +391,10 @@ body {
   transition: 0.15s;
 }
 .restaurants .restaurant-card .restaurant-text-container .heart-stack .full-heart:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+.restaurants .restaurant-card .restaurant-text-container .heart-stack .full-heart:active {
   opacity: 100%;
 }
 

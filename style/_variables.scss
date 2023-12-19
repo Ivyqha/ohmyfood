@@ -1,5 +1,6 @@
 /******* Animations *********/
 
+//All keyframes
 @keyframes loading {
     from {
         transform: rotate(0turn) 
@@ -12,7 +13,7 @@
 
 @keyframes loading-fade {
     from {
-        opacity: 100%;
+        opacity: 1;
         visibility: visible;
     }
     to {
@@ -21,6 +22,33 @@
     }
 }
 
+@keyframes header-slide-down { 
+    from {
+        transform: translateY(-30px); 
+        opacity: 0; 
+    }
+
+    to {
+        transform: translateY(0px); 
+        opacity: 1; 
+    }
+}
+
+@keyframes menu-slide-up{
+    from{
+        transform: translateY(50px);
+        opacity: 0; 
+        
+    }
+
+    to {
+        transform: translateY(0px); 
+        opacity: 1; 
+    }
+}
+
+
+//prepage loader 
 .loader { 
     display: flex;
     justify-content: center;
@@ -31,7 +59,7 @@
     background: rgba(0, 0, 0, 0.1); 
     backdrop-filter: blur(10px);
     z-index: 3; 
-    animation: loading-fade 1s ease 1.5s forwards;
+    animation: loading-fade 1s ease 1.0s forwards;
 }
 
 .loader::after{ 
@@ -41,7 +69,18 @@
     border: 15px solid #FF79DA ; 
     border-top-color: #9356DC; 
     border-radius: 50%; 
-    animation: loading 0.75s ease infinite; 
+    animation: loading 1s ease infinite; 
+}
+
+//page loader 
+.header-slide-down{ 
+    animation: header-slide-down 1s ease-in; 
+    z-index:1; 
+} 
+
+.menu-slide-up {
+    animation: menu-slide-up 1s ease-in ; 
+    z-index: 3; 
 }
 
 /******* Features and Elements *********/
@@ -120,6 +159,23 @@
             opacity: 80%; 
             
         }
+}
+
+@mixin fullHeart { 
+    color: transparent; 
+    background: linear-gradient(to top, #9356DC,#FF79DA); 
+    opacity: 0;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.15s;
+    &:hover { 
+        opacity: 100%; 
+        cursor: pointer;
+    }
+    &:active { 
+        opacity: 100%;
+    }
 }
 
 @mixin homePageTitle { 
