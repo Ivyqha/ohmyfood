@@ -13,7 +13,7 @@
     visibility: visible;
   }
   to {
-    opacity: 0%;
+    opacity: 0;
     visibility: hidden;
   }
 }
@@ -70,6 +70,20 @@
   z-index: 3;
 }
 
+.article-fade {
+  animation: menu-fade linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 35%;
+}
+
+@keyframes menu-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /******* Features and Elements *********/
 @media (min-width: 1200px) {
   /******* Home page *********/
