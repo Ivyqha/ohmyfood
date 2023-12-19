@@ -1,3 +1,46 @@
+/******* Animations *********/
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loading-fade {
+  from {
+    opacity: 100%;
+    visibility: visible;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 3;
+  animation: loading-fade 1s ease 1.5s forwards;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #FF79DA;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+/******* Features and Elements *********/
 @media (min-width: 1200px) {
   /******* Home page *********/
   .how-it-works {
@@ -73,6 +116,10 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -157,6 +204,10 @@ body {
   transition: all 500ms;
   box-shadow: 0 5px 10px rgb(99, 99, 99);
   opacity: 80%;
+}
+.bookmeal button a {
+  text-decoration: none;
+  color: white;
 }
 .bookmeal .title {
   font-size: 35px;
