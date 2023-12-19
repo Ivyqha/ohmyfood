@@ -21,18 +21,21 @@
 </head>
 
 <body>
-    <div></div>
+    <!-- logo header -->
     <header class="header">
         <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img class="logo" src="../images/logo/ohmyfood.png" alt = "ohmyfood logo">
     </header>
 
+    <!-- section 1: hero image -->
+    <!-- slide down animation as page loads -->
     <section class = "hero header-slide-down">
         <img class="heroimage" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image of Kitchen West">
     </section>
 
+    <!-- section 2: menu -->
+    <!-- slide up animation as page loads -->
    <section class="menu-container menu-slide-up">
-
         <div class = "menu ">
             <div class="restaurant-name">
                 <p class="title">Kitchen West</p>
@@ -41,11 +44,13 @@
                     <i class="fa-solid fa-heart fa-stack-1x full-heart"></i>
                 </div>
             </div>
-
+            <!-- Menu cards kept into a container for responsive design -->
             <section class = "course-container">
                 <section class="course">
                     <p class="course-title">STARTERS</p>
+                    <!-- menu card slideup animation for each-->
                     <article class="menu-card">
+                        <!-- using flex box on each part of the menu card to help with animations -->
                         <div class = "menu-txt">
                             <p class="food-title">Smoked Salmon</p>
                             <p class="food-subtitle">With beetroot and horseradish</p>
@@ -53,6 +58,7 @@
                         <div class="food-price">
                             <p class ="price">£25</p>
                         </div>
+                        <!-- tick container is hidden and margin translates when hovered/tapped -->
                         <div class="tick-container">
                             <i class="fa-solid fa-circle-check fa-fw"></i>
                         </div>
@@ -173,12 +179,14 @@
                 </section>
             </section>
 
+            <!-- section 3: order button -->
             <section class="order-btn">
                 <button class="button">Order</button>
             </section>
         </div>
    </section>
 
+   <!-- footer -->
    <footer class="footer">
         <img src="../images/logo/ohmyfood.png" alt="ohmyfood logo">
         <div class="footer-text-container">

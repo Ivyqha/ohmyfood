@@ -16,24 +16,32 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Ohmyfood</title>
 </head>
-    
+
+    <!-- Bounce animation to all elements on home page -->
 <body class="bounce">
+    <!-- Pade loader -->
     <div class ="loader"></div>
+
+    <!-- header -->
     <header class="header">
         <img class="logo" src="./images/logo/ohmyfood.png" alt = "ohmyfood logo">
     </header>
 
+    <!-- search bar -->
     <form class="searchbar">
         <i class="fa-solid fa-location-dot"></i>
         <input id ="search" type="search" placeholder="Islington, London">
     </form>
 
+    <!-- section 1 : book meal  -->
     <section class="bookmeal bounce">
         <p class="title">Book the meal you want</p>
         <p class ="subtitle">Discover our carefully selected high-end restaurants </p>
         <button><a href="#restaurants">Explore our restaurants</a></button>
     </section>
 
+    <!-- section 2 : how it works -->
+    <!-- Adding seperate bounce to each instruction box for a smooth transition -->
     <section class="how-it-works bounce">
         <div>
             <p class="title">How it works</p>
@@ -61,11 +69,13 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
+    <!-- section 3 : restaurants -->
+    <!-- Adding bounce class to each instruction box for a smooth transition -->
     <section class="restaurants">
         <div class = "restaurant-container">
+            <!-- Id added for easy scroll when "explore our restaurants is clicked" -->
             <p id="restaurants" class="title">Restaurants</p>
             <div class = "restaurants-card-container">
                 <article class="restaurant-card bounce">
@@ -77,6 +87,7 @@
                                 <h3 class="restaurant-title">Kitchen West</h3>
                                 <p class="subtitle">Angel</p>
                             </div>
+                            <!-- heart icon is stacked on top of each other to allow color change -->
                             <div class = "heart-stack fa-stack">
                                 <i class="fa-regular fa-heart fa-stack-1x"></i>
                                 <i class="fa-solid fa-heart fa-stack-1x full-heart"></i>
@@ -134,11 +145,13 @@
         </div>
     </section>
 
+    <!-- footer -->
     <footer class="footer">
         <img src="./images/logo/ohmyfood.png" alt="ohmyfood logo">
         <div class="footer-text-container">
             <div class="footer-text">
                 <i class="fa-solid fa-utensils fa-fw" ></i>
+                <!-- Each made into a link to make each one hoverable and clickable -->
                 <p class="footer-link"><a href="#">Suggest a restaurant</a></p>
             </div>
             <div class="footer-text">
