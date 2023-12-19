@@ -37,6 +37,16 @@
     opacity: 1;
   }
 }
+@keyframes card-slide-up {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .loader {
   display: flex;
   justify-content: center;
@@ -70,20 +80,30 @@
   z-index: 3;
 }
 
-.article-fade {
-  animation: menu-fade linear;
-  animation-timeline: view();
-  animation-range: entry 20% cover 35%;
+.menu-card {
+  animation: card-slide-up 2s ease-in-out forwards;
 }
 
-@keyframes menu-fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.bounce {
+  animation: card-slide-up 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
+
+.bounce-1 {
+  animation: card-slide-up 1s ease-in forwards;
+  animation-delay: 1s;
+}
+
+.bounce-2 {
+  animation: card-slide-up 1.5s ease-in forwards;
+  animation-delay: 1s;
+}
+
+.bounce-3 {
+  animation: card-slide-up 2s ease-in forwards;
+  animation-delay: 1s;
+}
+
 /******* Features and Elements *********/
 @media (min-width: 1200px) {
   /******* Home page *********/
