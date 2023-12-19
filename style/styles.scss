@@ -1,5 +1,5 @@
-@import "../_variables.scss"; 
-@import "../breakpoints.scss";
+@import "../style/variables"; 
+@import "../style/breakpoints";
 
 
 *{
@@ -69,12 +69,11 @@ body {
         margin-bottom: 45px; 
     }
 
-    button { 
+    .explore-btn { 
+        @include flexCenter();
         @include gradientBtn(); 
-        a {
-            text-decoration: none; 
-            color: white; 
-        }
+        text-decoration: none; 
+        color: white; 
     }
 
     .title { 

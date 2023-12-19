@@ -252,7 +252,10 @@ body {
   text-align: center;
   margin-bottom: 45px;
 }
-.bookmeal button {
+.bookmeal .explore-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 60px;
   font-size: 20px;
@@ -263,15 +266,13 @@ body {
   box-shadow: 0 5px 10px rgb(151, 151, 151);
   transition-property: transform;
   transition-duration: 400ms;
+  text-decoration: none;
+  color: white;
 }
-.bookmeal button:hover {
+.bookmeal .explore-btn:hover {
   transition: all 500ms;
   box-shadow: 0 5px 10px rgb(99, 99, 99);
   opacity: 80%;
-}
-.bookmeal button a {
-  text-decoration: none;
-  color: white;
 }
 .bookmeal .title {
   font-size: 35px;
