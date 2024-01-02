@@ -1,12 +1,14 @@
 @import "../style/variables"; 
 @import "../style/breakpoints";
 
-
+// reset css
 *{
-    font-family: 'Roboto', sans-serif;
+    
     margin: 0; 
     padding: 0; 
+    box-sizing: border-box;
 }
+// end of reset
 
 html {
     scroll-behavior: smooth;
@@ -14,6 +16,7 @@ html {
 
 body { 
     min-width: 420px; 
+    font-family: 'Roboto', sans-serif;
 }
 
 /******* header *********/
@@ -21,6 +24,7 @@ body {
 .header { 
     @include header(); 
     box-shadow: 0 4px 4px rgb(219, 219, 219); 
+    height: 10vh; 
     z-index: 2; 
 }
 

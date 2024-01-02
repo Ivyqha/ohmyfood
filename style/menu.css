@@ -84,8 +84,35 @@
   animation: card-slide-up 2s ease-in-out forwards;
 }
 
+.bounce {
+  animation: card-slide-up 2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.bounce-1 {
+  animation: card-slide-up 1s ease-in forwards;
+  animation-delay: 1s;
+}
+
+.bounce-2 {
+  animation: card-slide-up 1.5s ease-in forwards;
+  animation-delay: 1s;
+}
+
+.bounce-3 {
+  animation: card-slide-up 2s ease-in forwards;
+  animation-delay: 1s;
+}
+
 /******* Features and Elements *********/
-@media (min-width: 1200px) {
+@media screen and (min-device-width: 768px) {
+  .heroimage {
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media screen and (min-device-width: 1200px) {
   /******* Home page *********/
   .how-it-works {
     display: flex;
@@ -118,7 +145,7 @@
   }
   /******* menu pages *********/
   .heroimage {
-    height: 50vh;
+    height: 35vh;
     object-fit: cover;
     object-position: center;
   }
@@ -129,6 +156,7 @@
   }
   .menu-container .menu {
     width: 70%;
+    max-width: 980px;
     display: flex;
     flex-direction: column;
     align-items: center;
