@@ -47,7 +47,6 @@
     visibility: visible;
   }
 }
-
 .loader {
   display: flex;
   justify-content: center;
@@ -106,14 +105,14 @@
 }
 
 /******* Features and Elements *********/
-@media screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .heroimage {
     height: 30vh;
     object-fit: cover;
     object-position: center;
   }
 }
-@media screen and (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   /******* Home page *********/
   .how-it-works {
     display: flex;
@@ -345,7 +344,7 @@ body {
   box-sizing: border-box;
   height: 35px;
   width: 35px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   font-weight: bold;
   color: white;

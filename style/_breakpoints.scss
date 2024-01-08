@@ -1,5 +1,4 @@
-@media screen 
-    and (min-device-width: 768px) { 
+@media only screen and (min-width: 768px) { 
         .heroimage {
             height: 30vh; 
             object-fit: cover;
@@ -7,8 +6,7 @@
         }
 }
 //responsive design for desktop 
-@media screen 
-    and (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
     /******* Home page *********/
     .how-it-works {
