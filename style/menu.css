@@ -294,6 +294,7 @@ html {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .course .menu-card .menu-txt {
   z-index: 2;
